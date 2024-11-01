@@ -1,0 +1,184 @@
+.weather-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: black;
+    margin: 0;
+    padding: 0 10px; /* Horizontal padding */
+    transition: background-image 0.5s ease-in-out; /* Add this line */
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px;
+    box-shadow: 0 5px 100px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+    backdrop-filter: blur(10px); /* Frosted glass effect */
+    max-width: 400px; /* Max width for the card */
+    width: 100%; /* Full width */
+    margin: 20px 0; /* Space around the card */
+    border: 1px solid black;
+}
+
+.input-field {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin: 10px 0; /* Space above and below */
+    width: calc(100% - 20px); /* Full width minus padding */
+    font-size: 1rem; /* Responsive font size */
+}
+
+.search_btn {
+    background-color: #007bff; /* Bootstrap primary blue */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 1rem; /* Responsive font size */
+    width: 100%; /* Full width */
+}
+
+.search_btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.weather-table {
+    width: 100%; /* Full width for table */
+    margin-top: 20px; /* Space above the table */
+}
+
+.weather-row {
+    display: flex;
+    flex-direction: column; /* Stack rows vertically on small screens */
+    justify-content: center; /* Center content */
+}
+
+.weather-cell {
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.1); /* Light transparent background */
+    margin: 5px 0; /* Space between cells */
+    border-radius: 5px; /* Rounded corners */
+    border: 1px solid black;
+}
+
+/* Media Queries for Responsive Design */
+@media (min-width: 600px) {
+    .weather-row {
+        flex-direction: row; /* Horizontal layout on wider screens */
+    }
+
+    .weather-cell {
+        flex: 1; /* Equal space for cells */
+        margin: 5px; /* Maintain space between cells */
+    }
+}
+
+@media (max-width: 400px) {
+    .card {
+        padding: 15px;
+        margin: 10px; /* Reduce padding for smaller screens */
+    }
+
+    .input-field,
+    .search_btn {
+        font-size: 0.9rem; /* Smaller font size for smaller screens */
+    }
+}
+
+/* Additional Styles for Improved Responsiveness */
+@media (max-width: 600px) {
+    .weather-container {
+        padding: 0 5px; /* Less padding for small screens */
+    }
+
+    .card {
+        margin: 10px; /* Consistent margin on smaller screens */
+    }
+
+    .input-field,
+    .search_btn {
+        padding: 8px; /* Slightly smaller padding */
+        font-size: 0.85rem; /* Further reduce font size */
+    }
+}
+
+@media (max-width: 300px) {
+    .input-field,
+    .search_btn {
+        font-size: 0.75rem; /* Further reduce font size for very small screens */
+        padding: 6px; /* Even smaller padding */
+    }
+}
+
+.clear {
+    background-image: url("https://images.pexels.com/photos/96622/pexels-photo-96622.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+    background-size: cover;
+    background-position: center;
+}
+
+.rain {
+    background-image: url("https://images.unsplash.com/photo-1511634829096-045a111727eb?q=80&w=1934&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    background-position: center;
+}
+
+.clouds {
+    background-image: url("https://images.unsplash.com/photo-1509803874385-db7c23652552?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    background-position: center;
+}
+
+.haze {
+    background-image: url("https://media.wired.com/photos/65e860922a01e579ac0d29f2/master/w_1920,c_limit/london-heatwave.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+/* Extra cloud states for customization */
+.few_clouds {
+    background-image: url("https://images.unsplash.com/photo-1514519273132-6a1abd48302c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"); /* Add image URL here */
+    background-size: cover;
+    background-position: center;
+}
+
+.scattered_clouds {
+    background-image: url("https://images.unsplash.com/photo-1514454529242-9e4677563e7b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"); /* Add image URL here */
+    background-size: cover;
+    background-position: center;
+}
+
+.broken_clouds {
+    background-image: url("https://images.unsplash.com/photo-1511747779856-fd751a79aa22?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"); /* Add image URL here */
+    background-size: cover;
+    background-position: center;
+}
+
+.snow {
+    background-image: url("https://images.unsplash.com/photo-1477601263568-180e2c6d046e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    background-position: center;
+}
+
+.thunderstorm {
+    background-image: url("https://images.unsplash.com/photo-1574781481375-74a09eba71e1?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    background-position: center;
+}
+
+.default {
+    background-image: url("https://images.unsplash.com/photo-1419833173245-f59e1b93f9ee?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    background-position: center;
+}
+
+.overcast_clouds {
+    background-image: url("https://www.rochesterfirst.com/wp-content/uploads/sites/66/2021/04/sky-1107579_1920.jpg?w=1280&h=720&crop=1");
+    background-size: cover;
+    background-position: center;
+}
