@@ -46,9 +46,9 @@ function Weather() {
     // Map weather descriptions to class names
     const getWeatherClass = (description) => {
         const descriptionMap = {
+            "scattered clouds": "scattered_clouds",
             "clear sky": "clear",
             "few clouds": "few_clouds",
-            "scattered clouds": "scattered_clouds",
             "broken clouds": "broken_clouds",
             "shower rain": "rain",
             haze: "haze",
