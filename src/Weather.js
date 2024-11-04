@@ -57,7 +57,7 @@ function Weather() {
             "moderate rain": "rain",
             thunderstorm: "thunderstorm",
             snow: "snow",
-            mist: "default", // Optional: Add more conditions as needed
+            mist: "haze", // Optional: Add more conditions as needed
             "overcast clouds": "overcast_clouds", // Optional
         };
         return descriptionMap[description] || "default"; // Return default if not found

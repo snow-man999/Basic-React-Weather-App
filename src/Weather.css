@@ -148,7 +148,7 @@
 }
 
 .scattered_clouds {
-    background-image: url("https://images.unsplash.com/photo-1514454529242-9e4677563e7b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"); /* Add image URL here */
+    background-image: url("https://images.unsplash.com/photo-1701060615409-9a97f5c560fc?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"); /* Add image URL here */
     background-size: cover;
     background-position: center;
 }
