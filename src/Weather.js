@@ -53,8 +53,14 @@ function Weather() {
             "shower rain": "rain",
             haze: "haze",
             rain: "rain",
+            "light rain": "rain",
             "heavy intensity rain": "rain",
             "moderate rain": "rain",
+            "light snow": "snow",
+            "heavy snow": "snow",
+            "freezing rain": "rain",
+            "very heavy rain": "rain",
+
             thunderstorm: "thunderstorm",
             snow: "snow",
             mist: "haze", // Optional: Add more conditions as needed
